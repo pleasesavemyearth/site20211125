@@ -40,7 +40,7 @@ a:hover {
     margin: 10px;
 }
 .rbox2 :hover {
-    background-color: rgb(255, 145, 145);
+    background-color: gainsboro;
     border-radius: 50%;
     cursor: pointer; 
 }
@@ -93,7 +93,7 @@ input {
     position: relative;
     
 }
-.a { /*안움직여?*/
+.a { /*1.안움직여? icon의 이름 그대로쓰지말고 사용자정의로 바꿔야함*/
     position: absolute;
     left: 200px;
     top: 105px;
