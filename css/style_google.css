@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box; /*?*/
+}
+
+.dbg {
+ border: 0px dotted red;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    margin-top: 0.5em;
+    overflow: hidden; /*?*/
+}
+
+.navbar > .navbar-left {
+    float: left;
+    margin-left: 1em;/*왼쪽에서 좀 띄운다*/
+    line-height: 50px; /*글자가 가운데로 오게하기위해*/
+}
+
+.navbar > .navbar-right {
+    float: right;
+    margin-right: 1em;
+    line-height: 50px; 
+}
+
+.navbar li { /*여긴 > 안들어가는데 그 이유가 둘다 있어서? 그리고 ul아니다 항목 하나하나니까 li*/
+    list-style-type: none;
+    float: left; /*가로로 올리기위해, 그러나 여전히 붙어잇는건 마진이 없어서*/
+    margin: 0 0.5cm; 
+}
+
+li > a {
+    text-decoration: none; /*a태그 밑줄제거*/
+    color: gray;
+}
+
+li > a:visited { /*a태그 방문하고 다시돌아와도 색깔 유지하게 함*/
+    color: gray;
+}
+
+li > a:hover { /*커서 갓다대면 밑줄이 생김*/
+    text-decoration: underline;
+}
+
+.gb_app {
+    width: 48px;
+    height: 48px;
+    border: 0px solid black;
+    border-radius: 24px;
+}
+
+.gb_app:hover {
+    cursor: pointer; /*?*/
+    background-color: lightgrey;
+}
+
+#profileimg {
+    width: 48px;
+    height: 48px;
+    border: 0px solid black;
+    border-radius: 24px;
+}
+
+.wrapper {
+    height: calc(100vh - (11vh + 50px + 1em ));
+    overflow: hidden; /*내용물이 있을때 숨겨야 공간 차지한다?*/
+    position: relative; /*relative가운데에다 두려고*/
+}
+
+.container {
+    position: absolute; /*?*/
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%); /*?*/
+    text-align: center;
+    overflow: hidden;
+}
+
+.search {
+    width: 600px;
+    margin: 0 auto;
+
+}
+
+.search-bar {
+    border: 1px solid #cdcdcd;
+    border-radius: 25px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.search-bar:hover {
+    box-shadow: 0 1px 6px rgb(33 33 33 / 28%); /*?*/
+}
+
+.search-bar i {
+    width: 15px;
+    height: 15px;
+    color: #a5a5a5; /*아이콘 색상 변경*/
+}
+
+.search-bar input {
+    width: 90%;
+    height: 100%;
+    background-color: transparent; /*?*/
+    border: none;
+    font-size: 16px;
+}
+
+.search-buttons button { /*이 영역안에 있는 button만 그런데 또 > 는 안쓰는*/
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    color: #404040;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px 16px;
+    margin: 0 1em;
+    cursor: pointer; /*디폴트가 포인터이긴 하나 명시적으로 줌*/
+}
+
+.search-buttons button:hover {
+    border: 1px solid #cdcdcd;
+    box-shadow: 0 1px 6px rgb(33 33 33 / 28%);
+}
+
+.offered-in {
+    margin-top: 50px;
+}
+
+.offered-in a {
+    text-decoration: none; /*a태그 밑줄제거*/
+    color: black;
+}
+
+.offered-in a:visited { /*a태그 방문하고 다시돌아와도 색깔 유지하게 함*/
+    color: black;
+}
+
+.offered-in a:hover { /*커서 갓다대면 밑줄이 생김*/
+    text-decoration: underline;
+}
+
+footer {
+    bottom: 0;
+    background-color: #eeeeee;
+    height: 11vh; /*위에 계산하기 위해 vh로 설정*/
+}
+
+.location {
+    padding: 1em;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.footmenu ul >li { /*얘도 공백*/
+    list-style-type: none;
+    float: left;
+    margin: 0 1.2em;
+}
+
+.footmenu-left {
+    float: left;
+    height: 4vh;
+    padding-top: 0.3em;
+}
+
+.footmenu-right {
+    float: right;
+    height: 4vh;
+    padding-top: 0.3em;
+}
